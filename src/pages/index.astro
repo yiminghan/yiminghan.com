@@ -1,0 +1,44 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<!-- <Header title={SITE_TITLE} /> -->
+		<main>
+			<h1>👋 Hello, I'm YiMing</h1>
+		
+			<br />
+
+			<p>While I started my tech career as an Android Dev, I've worked with a lot of different tech stacks across the years.
+			I recently quit my job to pursue my personal interests, exploring the vast space of current technology. 
+			</p>
+
+			<br />
+
+
+			<p>My previous work history:</p>
+			
+			<ul class="my-4 mx-2 text-lg" >
+				<li>Bitmoji Sticker's Team Lead @ <a href="https://www.snapchat.com/" class="text-blue-600 font-bold">Snap</a></li>
+				<li>Android Lead @ <a href="https://modiface.com/" class="text-blue-600 font-bold">Modiface</a></li>
+				<li>Android Lead @ <a href="https://nanoleaf.me/" class="text-blue-600 font-bold">Nanoleaf</a></li>
+			</ul>
+
+			<p>If you are a recruiter, you might be also interested in <a href="https://docs.google.com/document/d/1x1wSE6D1A_cip8ohrFrKAg6kUgHyhMN5" class="text-blue-600">my resume</a></p>
+			<p>If you are looking for contracting jobs, you can reach out to me via hanyiming1995@gmail.com<p>
+			<br />
+			<br />
+
+			<div class="text-sm">(Yes, this is a minimal site build using <a href="https://astro.build" class="text-blue-600">Astro</a>)</div>
+		</main>
+		<Footer />
+	</body>
+</html>
