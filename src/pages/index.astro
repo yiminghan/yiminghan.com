@@ -11,7 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <!-- <Header title={SITE_TITLE} /> -->
+    <Header title={SITE_TITLE} />
     <main>
       <h1>👋 Hello, I'm YiMing</h1>
 
@@ -20,8 +20,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       <p>
         While I started my tech career as an Android Dev, I've worked with a lot
         of different tech stacks across the years. I recently quit my job to
-        pursue my personal interests, exploring the vast space of current
-        technology.
+        start <a
+          href="https://lavareach.com"
+          target="_blank"
+          class="text-blue-600 hover:underline font-bold">LavaReach</a
+        >.
       </p>
 
       <br />
@@ -58,25 +61,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       <br />
 
       <p>
-        If you are looking for contracting jobs, you can reach out to me via
-        hanyiming1995@gmail.com<p>
-          <a
-            href="https://cal.com/yiming/30min"
-            target="__blank"
-            class="text-blue-600">Book a meeting</a
-          > with me and let's talk!
-          <br />
-          <br />
-
-          <div class="text-sm">
-            (Yes, this is a minimal site build using <a
-              href="https://astro.build"
-              class="text-blue-600">Astro</a
-            >)
-          </div>
-        </p>
-        <Footer />
+        If you want to connect, you can reach out to me via
+        hanyiming1995@gmail.com or just follow me on X(formerly Twitter) <a
+          href="https://twitter.com/yimingdothan"
+          target="_blank"
+          class="text-blue-600">@yimingdothan</a
+        >
+        <br />
+        <br />
       </p>
     </main>
+    <!-- <Footer /> -->
   </body>
 </html>
