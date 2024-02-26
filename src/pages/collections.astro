@@ -1,0 +1,62 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import LinkComponent from "../components/LinkComponent.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <p>
+        This page acts like a <a
+          class="text-blue-600 hover:underline font-bold"
+          href={"https://en.wikipedia.org/wiki/Swipe_file"}
+        >
+          <span>Swipe File</span>
+        </a>
+        that featues good insprations. I'll be adding to this page more.
+      </p>
+
+      <br />
+      <h2>Great Web Visual Design:</h2>
+
+      <ul class="my-4 mx-2 text-lg">
+        <li>
+          <LinkComponent
+            title="Cari Aesthetics"
+            link="https://cari.institute/aesthetics"
+          />
+          <LinkComponent
+            link="https://ui.aceternity.com/components"
+            title="Aeternity UI Components"
+          />
+          <LinkComponent
+            title="Satori - Html to IMG"
+            link="https://github.com/vercel/satori"
+          />
+          <LinkComponent
+            title="Nextra - Next.js + MDX"
+            link="https://nextra.site/"
+          />
+        </li>
+      </ul>
+
+      <br />
+
+      <h2>Captivating Phrases:</h2>
+      <ul class="my-4 mx-2 text-sm">
+        <li>Well folks, it doesn't get any better than this: -</li>
+        <li>I worship at the alter of X</li>
+        <li>the best things in life are free, except -</li>
+      </ul>
+    </main>
+
+    <!-- <Footer /> -->
+  </body>
+</html>
