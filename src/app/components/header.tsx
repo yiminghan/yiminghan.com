@@ -1,6 +1,8 @@
 "use client";
 
+import { useTheme } from "@/hooks/useTheme";
 import { usePathname } from "next/navigation";
+import { use } from "react";
 
 function NavLink({ href, text }: { href: string; text: string }) {
   const path = usePathname();
@@ -9,7 +11,7 @@ function NavLink({ href, text }: { href: string; text: string }) {
   if (selected) {
     return (
       <span className="text-slate-700 underline dark:text-slate-100">
-        {"-> "}
+        {"->"}
         {text}
       </span>
     );
@@ -26,15 +28,14 @@ function NavLink({ href, text }: { href: string; text: string }) {
 }
 
 export function Header() {
+  const [_, toggleTheme] = useTheme();
   return (
-    <header className="flex w-full flex-col items-start justify-start bg-white px-8 py-4 text-slate-800 dark:bg-stone-800 dark:text-stone-200">
-      <div className="flex items-end gap-4 text-2xl">
+    <header className="flex w-full flex-col items-start justify-start bg-white px-[2.5rem] py-4 text-slate-800 dark:bg-stone-800 dark:text-stone-200">
+      <div className="flex items-end gap-[1.25rem]">
         <h1>YiMing Han </h1>
         <button
-          className="mb-1"
           onClick={() => {
-            const element = document.body;
-            element.classList.toggle("dark");
+            toggleTheme();
           }}
           id="theme-toggle"
           aria-label="Toggle theme"
@@ -43,7 +44,7 @@ export function Header() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="h-6 w-6"
+            className="h-[1.25rem] w-[1.25rem]"
           >
             <path
               fillRule="evenodd"
@@ -53,7 +54,7 @@ export function Header() {
           </svg>
         </button>
       </div>
-      <nav className="flex items-center gap-4">
+      <nav className="flex items-center gap-[1ch] font-normal">
         <NavLink href="/" text="About" />
         <NavLink href="/readings" text="Readings" />
         <NavLink href="/collections" text="Collections" />

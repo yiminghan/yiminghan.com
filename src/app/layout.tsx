@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "@/styles/grid.css";
 
 import { type Metadata } from "next";
 import { Space_Mono } from "next/font/google";
@@ -43,10 +44,12 @@ export default function RootLayout({
         <Header />
 
         <main className="flex min-h-screen w-full flex-col items-center bg-white text-slate-800 dark:bg-stone-800 dark:text-stone-200">
-          <hr className="my-4 w-full"></hr>
-          <div className="flex w-full flex-col justify-center gap-12 px-8 py-12">
+          <hr className="w-full dark:hidden"></hr>
+
+          <div className="flex w-full flex-col justify-center gap-[1.25rem] px-[2.5rem] py-[1.25rem] leading-5">
             {children}
           </div>
+          <div className="ggrid pointer-events-none top-0 opacity-0 dark:opacity-5"></div>
         </main>
       </body>
     </html>
