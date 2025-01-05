@@ -41,8 +41,9 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <hr className="my-4 w-full"></hr>
+
         <main className="flex min-h-screen w-full flex-col items-center bg-white text-slate-800 dark:bg-stone-800 dark:text-stone-200">
+          <hr className="my-4 w-full"></hr>
           <div className="flex w-full flex-col justify-center gap-12 px-8 py-12">
             {children}
           </div>
