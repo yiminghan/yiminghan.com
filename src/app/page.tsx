@@ -1,9 +1,8 @@
 export default function HomePage() {
   return (
     <>
-      <p>
+      <p className="whitespace-pre">
         Current Work <br />
-        CTO @{" "}
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
@@ -11,8 +10,28 @@ export default function HomePage() {
         >
           LavaReach
         </a>
+        {"     "}
+        - Prospect research at scale
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://indieinvoice.io/"
+        >
+          Indie Invoice
+        </a>{" "}
+        - Invoicing for freelancers
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://card.vin/"
+        >
+          Card Vin
+        </a>
+        {"      "}- Digital cards for digital homies
       </p>
-      <p>
+      <p className="whitespace-pre">
         Past Work{" "}
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -22,7 +41,7 @@ export default function HomePage() {
           [my resume]
         </a>
         <br />
-        Bitmoji Sticker&apos;s Team Lead @{" "}
+        Bitmoji Sticker&apos;s Team Lead {"  "}@{" "}
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
@@ -31,7 +50,7 @@ export default function HomePage() {
           Snap
         </a>
         <br />
-        Android Lead @{" "}
+        Android Lead {"                 "}@{" "}
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
@@ -40,7 +59,7 @@ export default function HomePage() {
           Modiface
         </a>
         <br />
-        Android Lead @{" "}
+        Android Lead {"                 "}@{" "}
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
