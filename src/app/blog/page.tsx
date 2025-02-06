@@ -28,7 +28,7 @@ export default function Collections() {
     <>
       <div>
         <BlogComponent
-          pre="Feb 6 2024 -"
+          pre="Feb 6 2025 -"
           title="Selling My First Startup"
           link="/blog/selling-my-first-startup"
         />

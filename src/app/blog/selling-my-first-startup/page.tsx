@@ -34,7 +34,7 @@ export default function SellingMyFirstStartup() {
         content={
           <>
             <div className="flex flex-col items-center">
-              <div className="gap-xl flex flex-row pb-[6px]">
+              <div className="gap-xl flex flex-col pb-[6px] xl:flex-row">
                 <Image
                   src="/blog/early-product-1.png"
                   alt="early product v1"
