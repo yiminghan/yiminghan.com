@@ -40,16 +40,15 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
       </head>
-      <body>
+      <body className="relative overflow-y-auto">
         <Header />
-
-        <main className="flex min-h-screen w-full flex-col items-center bg-white text-slate-800 dark:bg-stone-800 dark:text-stone-200">
+        <main className="flex h-full min-h-screen w-full flex-col items-center bg-white text-slate-800 dark:bg-stone-800 dark:text-stone-200">
           <hr className="w-full dark:hidden"></hr>
 
           <div className="flex w-full flex-col justify-center gap-[1.25rem] px-[2.5rem] py-[1.25rem] leading-5">
             {children}
           </div>
-          <div className="ggrid pointer-events-none top-0 opacity-0 dark:opacity-5"></div>
+          <div className="ggrid pointer-events-none fixed top-0 opacity-0 dark:opacity-5"></div>
         </main>
       </body>
     </html>
