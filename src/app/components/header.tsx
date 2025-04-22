@@ -2,7 +2,6 @@
 
 import { useTheme } from "@/hooks/useTheme";
 import { usePathname } from "next/navigation";
-import { use } from "react";
 
 function NavLink({ href, text }: { href: string; text: string }) {
   const path = usePathname();
@@ -11,7 +10,6 @@ function NavLink({ href, text }: { href: string; text: string }) {
   if (selected) {
     return (
       <span className="text-slate-700 underline dark:text-slate-100">
-        {"->"}
         {text}
       </span>
     );
@@ -54,7 +52,7 @@ export function Header() {
           </svg>
         </button>
       </div>
-      <nav className="flex items-center gap-[1ch] font-normal">
+      <nav className="grid grid-cols-2 items-center gap-[1ch] font-normal lg:flex">
         <NavLink href="/" text="About" />
         <NavLink href="/readings" text="Readings" />
         <NavLink href="/collections" text="Collections" />
