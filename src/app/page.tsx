@@ -1,12 +1,22 @@
 export default function HomePage() {
   return (
     <>
-      <p className="whitespace-pre">
+      <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
         Current Work <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
-          href="https://www.snapchat.com/"
+          href="https://www.landbase.com/"
+        >
+          Landbase
+        </a>
+        {"     "}
+        - AI-powered Go To Market
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.lavareach.com/"
         >
           LavaReach
         </a>
@@ -31,7 +41,7 @@ export default function HomePage() {
         </a>
         {"      "}- Digital cards for digital homies
       </p>
-      <p className="whitespace-pre">
+      <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
         Past Work{" "}
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -68,7 +78,7 @@ export default function HomePage() {
           Nanoleaf
         </a>
       </p>
-      <p>
+      <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
         Contact <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"

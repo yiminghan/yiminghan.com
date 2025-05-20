@@ -48,7 +48,7 @@ export default function RootLayout({
           <div className="flex w-full flex-col justify-center gap-[1.25rem] px-[2.5rem] py-[1.25rem] leading-5">
             {children}
           </div>
-          <div className="ggrid pointer-events-none top-0 opacity-0 dark:opacity-5"></div>
+          {/* <div className="ggrid pointer-events-none top-0 opacity-0 dark:opacity-5"></div> */}
         </main>
       </body>
     </html>

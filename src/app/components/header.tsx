@@ -9,19 +9,23 @@ function NavLink({ href, text }: { href: string; text: string }) {
 
   if (selected) {
     return (
-      <span className="text-slate-700 underline dark:text-slate-100">
-        {text}
-      </span>
+      <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
+        <span className="text-slate-700 underline dark:text-slate-100">
+          {text}
+        </span>
+      </p>
     );
   }
   return (
-    <a
-      className="text-blue-500 hover:text-blue-700 hover:underline"
-      href={href}
-      target={href.startsWith("http") ? "_blank" : undefined}
-    >
-      {text}
-    </a>
+    <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
+      <a
+        className="text-blue-500 hover:text-blue-700 hover:underline"
+        href={href}
+        target={href.startsWith("http") ? "_blank" : undefined}
+      >
+        {text}
+      </a>
+    </p>
   );
 }
 
