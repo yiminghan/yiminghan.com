@@ -15,9 +15,9 @@ function formaMdx(r: NewYapRequest) {
 
 `
       : "") +
-    (r.author ? `**By ${r.author}**\n` : "") +
-    `**${new Date().toDateString()}**\n` +
-    "\n" +
+    (r.author ? `**By ${r.author}**\n\n` : "") +
+    `**${new Date().toDateString()}**\n\n` +
+    "\n\n" +
     r.content
   );
 }
