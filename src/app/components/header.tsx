@@ -30,7 +30,7 @@ function NavLink({ href, text }: { href: string; text: string }) {
 }
 
 export function Header() {
-  const [_, toggleTheme] = useTheme();
+  const [, toggleTheme] = useTheme();
   return (
     <header className="flex w-full flex-col items-start justify-start bg-white px-[2.5rem] py-4 text-slate-800 dark:bg-stone-800 dark:text-stone-200">
       <div className="flex items-end gap-[1.25rem]">
@@ -61,6 +61,7 @@ export function Header() {
         <NavLink href="/readings" text="Readings" />
         <NavLink href="/collections" text="Collections" />
         <NavLink href="/blog" text="Blog" />
+        <NavLink href="/yap" text="Yap" />
         <NavLink href="https://github.com/yiminghan" text="Github" />
         <NavLink href="https://x.com/yimingdothan" text="Twitter" />
       </nav>

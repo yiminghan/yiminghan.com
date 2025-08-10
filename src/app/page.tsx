@@ -2,7 +2,18 @@ export default function HomePage() {
   return (
     <>
       <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
-        Current Work <br />
+        Current Work
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.anyenrich.com/"
+        >
+          AnyEnrich
+        </a>
+        {"     "}
+        - Enrich Anything with one API Call
+        <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
@@ -18,7 +29,7 @@ export default function HomePage() {
           target="_blank"
           href="https://www.lavareach.com/"
         >
-          LavaReach
+          LavaReach (Exited)
         </a>
         {"     "}
         - Prospect research at scale
