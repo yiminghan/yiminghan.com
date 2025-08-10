@@ -41,7 +41,7 @@ export async function PUT(req: Request) {
     );
 
   const response = await fetch(
-    `https://api.github.com/repos/yiminghan/yiminghan.com/contents/src/app/yap/${postName}/page.md`,
+    `https://api.github.com/repos/yiminghan/yiminghan.com/contents/src/app/yap/(posts)/${postName}/page.md`,
     {
       method: "PUT",
       headers: {
