@@ -35,10 +35,9 @@ export async function PUT(req: Request) {
   const validatedData = result.data;
   const today = new Date();
   const postName =
-    `${today.toISOString()}-${validatedData.title ?? "Untitled-Post"}`.replace(
-      /\s+/g,
-      "-",
-    );
+    `${today.toISOString()}-${validatedData.title ?? "Untitled-Post"}`
+      .replace(/[^\w-]/g, "-")
+      .toLowerCase();
 
   const response = await fetch(
     `https://api.github.com/repos/yiminghan/yiminghan.com/contents/src/app/yap/(posts)/${postName}/page.md`,

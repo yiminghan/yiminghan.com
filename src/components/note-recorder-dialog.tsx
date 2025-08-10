@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 import { type NewYapRequest } from "@/app/api/yap/route";
+import { toast } from "sonner";
 
 // Type declarations for Web Speech API
 interface SpeechRecognitionResult {
@@ -120,6 +121,7 @@ function NoteRecorderContent({
   const [selectedLanguage, setSelectedLanguage] = useState("en-US");
   const [uploading, setUploading] = useState(false);
   const [uploadAuthor, setUploadAuthor] = useState("");
+  const [uploadTitle, setUploadTitle] = useState("");
 
   const recognitionRef = useRef<SpeechRecognition | null>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -389,6 +391,16 @@ function NoteRecorderContent({
         </div>
       )}
 
+      <div className="mb-4 flex w-full min-w-[300px] flex-col items-center">
+        <input
+          type="text"
+          value={uploadTitle}
+          onChange={(e) => setUploadTitle(e.target.value)}
+          placeholder="(Optional) Enter Title"
+          className="min-w-[300px] rounded-2xl border border-[#DADADA] bg-[#F5F5F5] px-4 py-2 text-sm font-medium text-[#414141] placeholder-[#B4B4B4] transition-colors hover:bg-[#F7F7F7] focus:outline-none dark:border-[#404040] dark:bg-[#262626] dark:text-[#D1D1D1] dark:placeholder-stone-300 dark:hover:bg-[#333333]"
+        />
+      </div>
+
       {/* Transcript Display */}
       <div className="max-h-[300px] min-h-[200px] overflow-y-auto rounded-3xl border border-[#E2E2E2] bg-white p-6 dark:border-[#333333] dark:bg-[#1E1E1E]">
         <div className="prose max-w-none">
@@ -467,7 +479,7 @@ function NoteRecorderContent({
                 void uploadPost({
                   author: uploadAuthor,
                   content: transcript,
-                  title: undefined,
+                  title: uploadTitle,
                 })
               }
               disabled={!transcript}
@@ -580,11 +592,14 @@ export default function NoteRecorderDialog({
       </DialogTrigger>
       <DialogContent className="max-w-4xl">
         <DialogHeader>
-          <DialogTitle>Leave a Yap</DialogTitle>
+          <DialogTitle>Leave a Note</DialogTitle>
         </DialogHeader>
         <NoteRecorderContent
           onUploadFinished={() => {
             setDialogOpen(false);
+            toast(
+              "Note has been recorded.  Wait a few minutes for Github to pick up changes.",
+            );
           }}
         />
         {children}

@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import NoteRecorderDialog from "@/components/note-recorder-dialog";
+import { Toaster } from "@/components/ui/sonner";
 
 async function getDirectories() {
   const appDir = path.join(process.cwd(), "src/app/yap/(posts)");
@@ -22,7 +23,8 @@ async function getDirectories() {
         href: `/yap/${item.name}`,
         date: new Date(item.name.split("Z-")[0]! + "Z"),
         displayName: item.name.split("Z-")[1]?.replaceAll("-", " "),
-      }));
+      }))
+      .sort((a, b) => b.date.getTime() - a.date.getTime());
 
     return posts;
   } catch (error) {
@@ -36,10 +38,12 @@ export default async function DirectoryPage() {
 
   return (
     <div className="gap-sm flex flex-col">
+      <Toaster />
       <NoteRecorderDialog />
       {directories.map((dir) => (
         <Link key={dir.name} href={dir.href} className="hover:underline">
-          {dir.date.toLocaleDateString()} {dir.displayName}
+          {dir.date.toLocaleDateString()} {dir.date.toLocaleTimeString()}{" "}
+          {dir.displayName}
         </Link>
       ))}
     </div>
