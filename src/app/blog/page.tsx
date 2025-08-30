@@ -8,7 +8,7 @@ function BlogComponent({
   link: string;
 }) {
   return (
-    <span>
+    <span className="whitespace-pre">
       {pre}{" "}
       <a
         href={link}
@@ -28,7 +28,12 @@ export default function Collections() {
     <>
       <div>
         <BlogComponent
-          pre="Feb 6 2025 -"
+          pre="Aug 30 2025 -"
+          title="Qutting, Again"
+          link="/blog/quitting-again"
+        />
+        <BlogComponent
+          pre="Feb  6 2025 -"
           title="Selling My First Startup"
           link="/blog/selling-my-first-startup"
         />
