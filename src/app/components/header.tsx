@@ -61,7 +61,6 @@ export function Header() {
         <NavLink href="/readings" text="Readings" />
         <NavLink href="/collections" text="Collections" />
         <NavLink href="/blog" text="Blog" />
-        <NavLink href="/yap" text="Yap" />
         <NavLink href="https://github.com/yiminghan" text="Github" />
         <NavLink href="https://x.com/yimingdothan" text="Twitter" />
       </nav>
