@@ -21,7 +21,7 @@ export default function OneWayTicketToTaipei() {
       <p>
         Much like the startup founders I&#39;ve met over the years. A lot of
         them are inspired by the same heroes. Alex Hormozi, Mark Zuckerberg,
-        Collison brothers… the list goes on.. The idea of locking in and
+        Collison brother, the list goes on.. The idea of locking in and
         achieving generational success is what we all dream of. The glory and
         everything. After I started working on my first startup - 3 cofounders,
         all based in Toronto - I told myself, this is the time to lock in. No
