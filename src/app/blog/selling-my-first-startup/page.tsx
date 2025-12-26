@@ -20,7 +20,7 @@ function Section({
 
 export default function SellingMyFirstStartup() {
   return (
-    <div>
+    <div className="max-w-[1000px]">
       <h1>Selling My First Startup:</h1>
       <p>
         <span>

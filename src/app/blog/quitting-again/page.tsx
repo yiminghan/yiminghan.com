@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function QuittingAgain() {
   return (
-    <div>
+    <div className="max-w-[1000px]">
       <h1>Quitting, Again</h1>
       <br />
       <p>
