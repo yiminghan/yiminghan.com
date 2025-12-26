@@ -20,8 +20,8 @@ export default function OneWayTicketToTaipei() {
       <br />
       <p>
         Much like the startup founders I&#39;ve met over the years. A lot of
-        them are inspired by the same heroes. Alex Hormozi, Mark Zukerberg,
-        Collision brothers… the list goes on.. The idea of locking in and
+        them are inspired by the same heroes. Alex Hormozi, Mark Zuckerberg,
+        Collison brothers… the list goes on.. The idea of locking in and
         achieving generational success is what we all dream of. The glory and
         everything. After I started working on my first startup - 3 cofounders,
         all based in Toronto - I told myself, this is the time to lock in. No
@@ -55,9 +55,9 @@ export default function OneWayTicketToTaipei() {
       </p>
       <br />
       <p>
-        If you can&apos;t tell, I&apos;m the type of person to have 1000 saved
+        (If you can&apos;t tell, I&apos;m the type of person to have 1000 saved
         potions for the final boss fight in a RPG game, only to save them for
-        the final boss and never use them ever.
+        the final boss and never use them ever.)
       </p>
       <br />
       <hr className="h-[1px] pb-[19px]" />
@@ -86,7 +86,7 @@ export default function OneWayTicketToTaipei() {
         >
           shower test
         </Link>
-        . I even binge watched Anthony Bourdin and fantasized a little bit. My
+        . I even binge watched Anthony Bourdain and fantasized a little bit. My
         soul slowly but surely begins to sing a song so loud my heart cannot
         ignore.
       </p>
