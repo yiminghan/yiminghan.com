@@ -1,8 +1,28 @@
 export default function HomePage() {
   return (
     <>
-      <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
+      <p className="w-full whitespace-pre text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
         Current Work
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.callcow.ai/"
+        >
+          CallCow
+        </a>
+        {"       "}
+        - Simple Voice AI Workflows
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.swishai.app/"
+        >
+          Swish AI App
+        </a>
+        {"  "}
+        - BasketBall Coach In Your Pocket
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -13,26 +33,6 @@ export default function HomePage() {
         </a>
         {"     "}
         - Enrich Anything with one API Call
-        <br />
-        <a
-          className="text-blue-500 hover:text-blue-700 hover:underline"
-          target="_blank"
-          href="https://www.landbase.com/"
-        >
-          Landbase
-        </a>
-        {"     "}
-        - AI-powered Go To Market
-        <br />
-        <a
-          className="text-blue-500 hover:text-blue-700 hover:underline"
-          target="_blank"
-          href="https://www.lavareach.com/"
-        >
-          LavaReach (Exited)
-        </a>
-        {"     "}
-        - Prospect research at scale
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -52,14 +52,33 @@ export default function HomePage() {
         </a>
         {"      "}- Digital cards for digital homies
       </p>
-      <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
-        Past Work{" "}
+      <p className="w-full whitespace-pre text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
+        Past Work{"                      "}
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
           href="https://docs.google.com/document/d/1x1wSE6D1A_cip8ohrFrKAg6kUgHyhMN5/"
         >
           [my resume]
+        </a>
+        <br />
+        Toronto Eng Team Lead {"        "}@{" "}
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.landbase.com/"
+        >
+          Landbase
+        </a>
+        {"     "}
+        <br />
+        CTO {"                          "}@{" "}
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.lavareach.com/"
+        >
+          LavaReach (Exited)
         </a>
         <br />
         Bitmoji Sticker&apos;s Team Lead {"  "}@{" "}
