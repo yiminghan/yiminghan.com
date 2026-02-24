@@ -28,6 +28,11 @@ export default function Collections() {
     <>
       <div>
         <BlogComponent
+          pre="Feb 24 2026 -"
+          title="GTM Framework for Founders With 0 Customers"
+          link="/blog/gtm-framework-for-founders"
+        />
+        <BlogComponent
           pre="Dec 25 2025 -"
           title="I booked a one way ticket to Taipei"
           link="/blog/one-way-ticket-to-taipei"
