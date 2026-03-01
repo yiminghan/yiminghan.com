@@ -12,7 +12,7 @@ export default function HomePage() {
           CallCow
         </a>
         {"       "}
-        - Simple Voice AI Workflows
+        - Simple Voice AI Workflows (8k MRR)
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -22,7 +22,16 @@ export default function HomePage() {
           Swish AI App
         </a>
         {"  "}
-        - BasketBall Coach In Your Pocket
+        - BasketBall Coach In Your Pocket  (2k MRR)
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://inboundcat.com/"
+        >
+          InboundCat
+        </a>
+        {"    "}- Drop-in lead capture for your website
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -51,6 +60,8 @@ export default function HomePage() {
           Card Vin
         </a>
         {"      "}- Digital cards for digital homies
+        <br />
+
       </p>
       <p className="w-full whitespace-pre text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
         Past Work{"                      "}
