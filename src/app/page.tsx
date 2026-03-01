@@ -4,6 +4,9 @@ export default function HomePage() {
       <p className="w-full whitespace-pre text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
         Current Work
         <br />
+        <br />
+        2026
+        <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
@@ -22,7 +25,7 @@ export default function HomePage() {
           Swish AI App
         </a>
         {"  "}
-        - BasketBall Coach In Your Pocket  (2k MRR)
+        - BasketBall Coach In Your Pocket (2k MRR)
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -32,6 +35,9 @@ export default function HomePage() {
           InboundCat
         </a>
         {"    "}- Drop-in lead capture for your website
+        <br />
+        <br />
+        2025
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
