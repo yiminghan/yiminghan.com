@@ -2,10 +2,32 @@ export default function HomePage() {
   return (
     <>
       <p className="w-full whitespace-pre text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
-        Current Work
+        Side Project Maxxing
         <br />
         <br />
         2026
+
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.talkbetterapp.com/"
+        >
+          TalkBetterApp
+        </a>
+        {" "}
+        - Your Personal Speaking Coach
+
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="https://www.uselocus.app/"
+        >
+          Locus
+        </a>
+        {"         "}
+        - Take control your attention
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -15,7 +37,7 @@ export default function HomePage() {
           CallCow
         </a>
         {"       "}
-        - Simple Voice AI Workflows (8k MRR)
+        - Simple Voice AI Workflows
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
@@ -25,7 +47,7 @@ export default function HomePage() {
           Swish AI App
         </a>
         {"  "}
-        - BasketBall Coach In Your Pocket (2k MRR)
+        - BasketBall Coach In Your Pocket
         <br />
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
