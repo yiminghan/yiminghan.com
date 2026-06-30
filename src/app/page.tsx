@@ -11,6 +11,17 @@ export default function HomePage() {
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           target="_blank"
+          href="https://onsen-retreat.com/"
+        >
+          Onsen Retreat
+        </a>
+        {" "}
+        - Flying strangers to Japan
+
+        <br />
+        <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
           href="https://www.talkbetterapp.com/"
         >
           TalkBetterApp
