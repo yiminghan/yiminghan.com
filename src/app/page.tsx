@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <>
       <p className="w-full whitespace-pre text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
-        Hi 👋 I&apos;m YiMing, a senior software architect and an independent consultant.
+        Hi 👋 I&apos;m YiMing, a senior software architect and independent consultant.
         <br />
         <br />
         Personal / Work Projects
