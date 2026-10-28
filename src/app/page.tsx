@@ -2,9 +2,12 @@ export default function HomePage() {
   return (
     <>
       <p className="w-full whitespace-pre text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
-        Side Project Maxxing
+        Hi 👋 I&apos;m YiMing, a senior software architect and an independent consultant.
         <br />
         <br />
+        Personal / Work Projects
+        <br />
+
         2026
 
         <br />
@@ -160,6 +163,16 @@ export default function HomePage() {
       </p>
       <p className="w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12">
         Contact <br />
+        Need some consulting work?
+        <br />
+        Work with me <a
+          className="text-blue-500 hover:text-blue-700 hover:underline"
+          target="_blank"
+          href="/consulting"
+        >
+          here
+        </a>
+        {/* 
         <a
           className="text-blue-500 hover:text-blue-700 hover:underline"
           href="mailto:hanyiming1995@gmail.com"
@@ -173,7 +186,7 @@ export default function HomePage() {
           href="https://x.com/yimingdothan"
         >
           @yimingdothan
-        </a>
+        </a> */}
       </p>
     </>
   );

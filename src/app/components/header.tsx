@@ -58,6 +58,7 @@ export function Header() {
       </div>
       <nav className="grid grid-cols-2 items-center gap-[1ch] font-normal lg:flex">
         <NavLink href="/" text="About" />
+        <NavLink href="/consulting" text="Consulting" />
         {/* <NavLink href="/readings" text="Readings" /> */}
         {/* <NavLink href="/collections" text="Collections" /> */}
         <NavLink href="/blog" text="Blog" />
