@@ -1,5 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "I booked a one way ticket to Taipei",
+  description:
+    "On leaving to travel, startups, and choosing a different kind of life.",
+  path: "/blog/one-way-ticket-to-taipei",
+  type: "article",
+});
 
 export default function OneWayTicketToTaipei() {
   return (

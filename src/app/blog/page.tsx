@@ -1,3 +1,11 @@
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Blog",
+  description: "Writing by YiMing Han on startups, GTM, and life.",
+  path: "/blog",
+});
+
 function BlogComponent({
   pre,
   title,

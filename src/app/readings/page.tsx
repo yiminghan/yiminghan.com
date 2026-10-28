@@ -1,3 +1,11 @@
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Readings",
+  description: "Books and papers YiMing Han recommends.",
+  path: "/readings",
+});
+
 function BookComponent({
   bookTitle,
   bookLink,

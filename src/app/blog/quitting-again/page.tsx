@@ -1,5 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Quitting, Again",
+  description:
+    "Seven months after selling my first startup, I decided to leave and start something new again.",
+  path: "/blog/quitting-again",
+  type: "article",
+});
 
 export default function QuittingAgain() {
   return (

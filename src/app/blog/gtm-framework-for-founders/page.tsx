@@ -1,3 +1,13 @@
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "GTM Framework for Founders With 0 Customers",
+  description:
+    "A practical framework for founders who have spoken to zero customers: build your list, then do outreach.",
+  path: "/blog/gtm-framework-for-founders",
+  type: "article",
+});
+
 export default function GTMFrameworkForFounders() {
   return (
     <div className="max-w-[1000px]">

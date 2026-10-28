@@ -1,3 +1,11 @@
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Collections",
+  description: "A collection of great web design, tools, and resources.",
+  path: "/collections",
+});
+
 function LinkComponent({ title, link }: { title: string; link: string }) {
   return (
     <a

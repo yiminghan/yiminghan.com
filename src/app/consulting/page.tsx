@@ -1,4 +1,13 @@
 import { InterestForm } from "./interest-form";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Engineering Consulting",
+  description:
+    "We build and ship production AI. Hands-on engineering training and AI applications for teams.",
+  path: "/consulting",
+});
+
 
 const textClass =
   "w-full text-sm sm:w-11/12 sm:text-base md:w-10/12 md:text-lg lg:w-9/12 lg:text-xl xl:w-8/12";

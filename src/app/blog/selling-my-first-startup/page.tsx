@@ -1,4 +1,13 @@
 import Image from "next/image";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Selling My First Startup",
+  description:
+    "How my first startup got acquired in 4 days, and what I learned along the way.",
+  path: "/blog/selling-my-first-startup",
+  type: "article",
+});
 
 function Section({
   title,

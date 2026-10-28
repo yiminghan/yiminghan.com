@@ -3,11 +3,18 @@ import "@/styles/grid.css";
 
 import { type Metadata } from "next";
 import { Space_Mono } from "next/font/google";
+import { pageMetadata, siteName, siteUrl } from "@/lib/metadata";
 import { Header } from "./components/header";
 
 export const metadata: Metadata = {
-  title: "YiMing's Site",
-  description: "Collections by YiMing Han",
+  ...pageMetadata({
+    title: siteName,
+    description:
+      "YiMing Han, senior software architect and independent consultant.",
+    path: "/",
+  }),
+  metadataBase: new URL(siteUrl),
+  title: { default: siteName, template: `%s | ${siteName}` },
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
